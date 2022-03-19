@@ -29,14 +29,14 @@ Python uses indentation to indicate a block of code.
 - Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.
 
 ```python
-|x = 5
+x = 5
 y = "John"
 ```
 - Variables do not need to be declared with any particular type, and can even change type after they have been set.
 
 - If you want to specify the data type of a variable, this can be done with casting.
 ```python
-|x = str(3)    # |x will be '3'
+x = str(3)    # |x will be '3'
 y = int(3)    # y will be 3
 z = float(3)  # z will be 3.0 
 ```
@@ -59,17 +59,17 @@ Rules for Python variables:
 
 - Many Values to Multiple Variables : **Python allows you to assign values to multiple variables in one line**
 ```python
-|x, y, z = "Orange", "Banana", "Cherry"
+x, y, z = "Orange", "Banana", "Cherry"
 ```
 - One Value to Multiple Variables : **You can assign the same value to multiple variables in one line**
 ```python
-|x = y = z = "Orange"
+x = y = z = "Orange"
 ```
 
 - If you have a collection of values in a list, tuple etc. Python allows you to extract the values into variables. This is called unpacking.
 ```python
 fruits = ["apple", "banana", "cherry"]
-|x, y, z = fruits
+x, y, z = fruits
 ```
 
 ## Python - Global Variables
