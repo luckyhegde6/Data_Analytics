@@ -12,7 +12,102 @@ When known to the interpreter, the script name and additional arguments thereaft
 
 When commands are read from a tty, the interpreter is said to be in interactive mode. In this mode it prompts for the next command with the primary prompt, usually three greater-than signs **(>>>)**; for continuation lines it prompts with the secondary prompt, by default three dots **(...)**.
 
-## Data TypesWith Python, it is possible to use the ** operator to calculate powers
+## Python Indentation
+
+Indentation refers to the spaces at the beginning of a code line.
+
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+
+Python uses indentation to indicate a block of code.
+
+**Note:**
+- **Python will give you an error if you skip the indentation**
+- **You have to use the same number of spaces in the same block of code, otherwise Python will give you an error**
+
+## Python Variables
+
+- Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.
+
+```python
+|x = 5
+y = "John"
+```
+- Variables do not need to be declared with any particular type, and can even change type after they have been set.
+
+- If you want to specify the data type of a variable, this can be done with casting.
+```python
+|x = str(3)    # |x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0 
+```
+
+- You can get the data type of a variable with the `type()` function.
+
+- **Variable names are case-sensitive.**
+```python
+a = 4
+A = "Sally"
+#A will not overwrite a 
+```
+
+Rules for Python variables:
+
+   - A variable name must start with a letter or the underscore character
+   - A variable name cannot start with a number
+   - A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+   - Variable names are case-sensitive (age, Age and AGE are three different variables)
+
+- Many Values to Multiple Variables : **Python allows you to assign values to multiple variables in one line**
+```python
+|x, y, z = "Orange", "Banana", "Cherry"
+```
+- One Value to Multiple Variables : **You can assign the same value to multiple variables in one line**
+```python
+|x = y = z = "Orange"
+```
+
+- If you have a collection of values in a list, tuple etc. Python allows you to extract the values into variables. This is called unpacking.
+```python
+fruits = ["apple", "banana", "cherry"]
+|x, y, z = fruits
+```
+
+## Python - Global Variables
+
+Variables that are created outside of a function (as in all of the examples above) are known as global variables.
+
+Global variables can be used by everyone, both inside of functions and outside.
+
+Note : Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
+
+**To create a global variable inside a function, you can use the `global` keyword. Also, use the `global` keyword if you want to change a global variable inside a function**
+
+## Data Types
+
+**Text Type:** 	`str`
+**Numeric Types:** 	`int, float, complex`
+**Sequence Types:** 	`list, tuple, range`
+**Mapping Type:** 	`dict`
+**Set Types:** 	`set, frozenset`
+**Boolean Type:** `bool`
+**Binary Types:** 	`bytes, bytearray, memoryview`
+
+|Example|Data Type|
+|-----:|------:|
+|x = "Hello World"| 	str 	|
+|x = 20 | 	int 	|
+|x = 20.5 |	float 	|
+|x = 1j |	complex 	|
+|x = ["apple", "banana", "cherry"] |	list 	|
+|x = ("apple", "banana", "cherry") |	tuple 	|
+|x = range(6) |	range 	|
+|x = {"name" : "John", "age" : 36} |	dict 	|
+|x = {"apple", "banana", "cherry"} |	set 	|
+|x = frozenset({"apple", "banana", "cherry"}) |	frozenset |	
+|x = True |	bool 	|
+|x = b"Hello" |	bytes 	|
+|x = bytearray(5) |	bytearray |	
+|x = memoryview(bytes(5)) |	memoryview |
 
 ### Numbers
 - The integer numbers (e.g. 2, 4, 20) have type **int**, the ones with a fractional part (e.g. 5.0, 1.6) have type **float**. 
@@ -33,13 +128,13 @@ When commands are read from a tty, the interpreter is said to be in interactive 
 
 - If you don’t want characters prefaced by `\` to be interpreted as special characters, you can use raw strings by adding an r before the first quote for e.g 
 
-```
+```python
 print(r'C:\some\name')  # note the r before the quote
-C:\some\name 
+#C:\some\name 
 
 ```
 - String literals can span multiple lines. One way is using triple-quotes: """...""" or '''...'''. End of lines are automatically included in the string, but it’s possible to prevent this by adding a \ at the end of the line. The following example:
-```
+```python
 print("""\
 Usage: thingy [OPTIONS]
      -h                        Display this usage message
@@ -57,7 +152,7 @@ Usage: thingy [OPTIONS]
 - Slicing is also supported. While indexing is used to obtain individual characters, slicing allows you to obtain substring `word[0:2]  # characters from position 0 (included) to 2 (excluded)`
 
 Slice indices have useful defaults; an omitted first index defaults to zero, an omitted second index defaults to the size of the string being sliced. 
-```
+```python
 >>> word[:2]   # character from the beginning to position 2 (excluded)
 'Py'
 >>> word[4:]   # characters from position 4 (included) to the end
