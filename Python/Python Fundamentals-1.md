@@ -1,7 +1,7 @@
  # Python Fundamentals and common used commands
 
  ## Using the Python Interpreter
- The Python interpreter is usually installed as /usr/local/bin/python3.10 on those machines where it is available; putting /usr/local/bin in your Unix shell’s search path makes it possible to start it by typing the command:
+ The Python interpreter is usually installed as `/usr/local/bin/python3.10` on those machines where it is available; putting `/usr/local/bin` in your Unix shell’s search path makes it possible to start it by typing the command:
 
 ``` python3.10 ```
 
@@ -149,7 +149,8 @@ Usage: thingy [OPTIONS]
 
 - Strings can be indexed (subscripted), with the first character having index **0**. There is no separate character type; a character is simply a string of size one. Indices may also be negative numbers, to start counting from the right. **Note that since -0 is the same as 0, negative indices start from -1**.
 
-- Slicing is also supported. While indexing is used to obtain individual characters, slicing allows you to obtain substring `word[0:2]  # characters from position 0 (included) to 2 (excluded)`
+- Slicing is also supported. While indexing is used to obtain individual characters, slicing allows you to obtain substring 
+For e.g `word[0:2]  # characters from position 0 (included) to 2 (excluded)`
 
 Slice indices have useful defaults; an omitted first index defaults to zero, an omitted second index defaults to the size of the string being sliced. 
 ```python
