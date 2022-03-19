@@ -93,7 +93,7 @@ Note : Normally, when you create a variable inside a function, that variable is 
 **Binary Types:** 	`bytes, bytearray, memoryview`
 
 |Example|Data Type|
-|-----:|------:|
+|:-----|:------|
 |x = "Hello World"| 	str 	|
 |x = 20 | 	int 	|
 |x = 20.5 |	float 	|
