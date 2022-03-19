@@ -84,14 +84,14 @@ Note : Normally, when you create a variable inside a function, that variable is 
 
 ## Data Types
 
-**Text Type:** 	`str`
-**Numeric Types:** 	`int, float, complex`
-**Sequence Types:** 	`list, tuple, range`
-**Mapping Type:** 	`dict`
-**Set Types:** 	`set, frozenset`
-**Boolean Type:** `bool`
-**Binary Types:** 	`bytes, bytearray, memoryview`
-
+- **Text Type:** 	`str`
+- **Numeric Types:** 	`int, float, complex`
+- **Sequence Types:** 	`list, tuple, range`
+- **Mapping Type:** 	`dict`
+- **Set Types:** 	`set, frozenset`
+- **Boolean Type:** `bool`
+- **Binary Types:** 	`bytes, bytearray, memoryview`
+___
 |Example|Data Type|
 |:-----|:------|
 |x = "Hello World"| 	str 	|
